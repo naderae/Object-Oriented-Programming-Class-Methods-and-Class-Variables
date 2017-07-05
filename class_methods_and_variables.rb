@@ -48,4 +48,7 @@ account_1 = BankAccount.create
 account_1.deposit(150)
 account_2 = BankAccount.create
 account_2.deposit(3000)
-BankAccount.total_funds 
+account_1.withdraw(100)
+
+BankAccount.total_funds
+BankAccount.interest_time 

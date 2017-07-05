@@ -51,7 +51,8 @@ def self.current_due_date
 end
 
 def borrow
-  if self.lent_out?
+  if lent_out?
+    puts self.lent_out?
     return false
   else
     @due_date = Book.current_due_date
@@ -80,6 +81,9 @@ def self.overdue
   end
 end
 
+book_1 = Book.new ("naders life story", "nader abou_ezze", "1242345")
+book_1.lent_out?
+book_1.borrow
 
 
 
